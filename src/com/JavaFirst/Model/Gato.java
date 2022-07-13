@@ -10,7 +10,7 @@ import java.util.Objects;
  *
  */
 public class Gato {
-	//private String nome;
+	private String nome;
 	private Integer idade;
 	private String cor;
 
