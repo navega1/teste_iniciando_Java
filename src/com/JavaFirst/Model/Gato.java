@@ -19,18 +19,19 @@ public class Gato {
 	 * @param idade
 	 * @param cor
 	 */
-	public Gato(String nome, Integer idade, String cor) {
-		
-		this.nome = nome;
-		this.idade = idade;
-		this.cor = cor;
+	public Gato() {
+
 	}
 
 	/**
-	 * 
+	 * @param nome
+	 * @param idade
+	 * @param cor
 	 */
-	public Gato() {
-		// TODO Auto-generated constructor stub
+	public Gato(String nome, Integer idade, String cor) {
+		this.nome = nome;
+		this.idade = idade;
+		this.cor = cor;
 	}
 
 	/**
@@ -90,13 +91,6 @@ public class Gato {
 			return false;
 		Gato other = (Gato) obj;
 		return Objects.equals(cor, other.cor) && Objects.equals(idade, other.idade) && Objects.equals(nome, other.nome);
-	}
-
-	@Override
-	public String toString() {
-		return "Gato [nome=" + nome + ", idade=" + idade + ", cor=" + cor + ", getNome()=" + getNome() + ", getIdade()="
-				+ getIdade() + ", getCor()=" + getCor() + ", hashCode()=" + hashCode() + ", getClass()=" + getClass()
-				+ ", toString()=" + super.toString() + "]";
 	}
 
 }
